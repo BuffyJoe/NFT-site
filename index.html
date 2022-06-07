@@ -9,7 +9,14 @@
     <title>SURVEY</title>
 
     <style>
-      h1, h2, h3, h4{
+      h1, h2, h3, h4, h5, .h1{
+        color: white;
+      }
+
+      .list-item-local{
+        font-size: 15px;
+        padding: 10px;
+        font-style: italic;
         color: white;
       }
       .new-nft-item{
@@ -17,6 +24,9 @@
         margin-bottom: 10px;
         padding: 10px;
         
+      }
+      ol, ul{
+        list-style: none;
       }
       .new-nft-item:hover{
         opacity: 0.8;
@@ -39,9 +49,15 @@
       }
       #hr{
         display: none;
+        height: 2px;
+        opacity: 1;
+        color: white;
       }
       .list-group-item{
         color: white;
+      }
+      #spacer{
+        height: 400px;
       }
       @media (max-width: 600px){
         .new-nft-item{
@@ -78,9 +94,20 @@
           width: 150px;
           margin-left: 5px;
         }
+        .list-item-local{
+          text-align: left;
+          padding: 0px 0px 3px 0px;
+        }
+        
+        li > h4{
+          color: white;
+          font-style: normal;
+          text-decoration: underline;
+        }
       }
-  
-
+      #link:hover{
+          text-decoration: underline;
+        }
       .carousel-item > img{
           height: 500px;
           width: 550px;
@@ -107,7 +134,7 @@
       }
     </style>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" style="color: rgb(60, 60, 180);">
         <div class="container-fluid">
             
             <div style="width: 60px;"></div>
@@ -144,7 +171,7 @@
         </div>
       </nav>
 </head>
-<body style="background-image: url(VzM7jr.jpg);">
+<body style="background-image: url(bck.jpg);">
     <div style="padding: 10px 20px 10px 10px; margin-top: 20px;" class=".container">
         <div class="row">
 <div class="col-md-8 col-sm">
@@ -328,46 +355,116 @@
       </div>
     </div>
     <!-- end of New NFT's/ popular now -->
-
-    <div class="container-fluid bg-dark" style="padding: 20px;">
+<div id="spacer"></div>
+    <div class="container-fluid" style="padding-left: 40px; opacity: 1;">
       <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-2 text-left">
-          <h4>
-            About GoDaddy </h4>
+        <div class="col-lg-3 col-md-3 col-sm-3 text-left">
             <ul class="list-group list-group-flush" >
-              <li class="list-group-item bg-dark"><a> About Us</a></li>
               
-              <li class="list-group-item bg-dark"><a> Contact Us</a></li>
+            <li class="list-item-local"><h4>About NFT R us</h4></li>
+              <li class="list-item-local"><a id="link"> About Us</a></li>
               
-              <li class="list-group-item bg-dark"><a> Newsroom</a></li>
+              <li class="list-item-local"><a id="link"> Contact Us</a></li>
               
-              <li class="list-group-item bg-dark"><a> Investor Relations</a></li>
+              <li class="list-item-local"><a id="link"> Newsroom</a></li>
               
-              <li class="list-group-item bg-dark"><a> Careers</a></li>
+              <li class="list-item-local"><a id="link"> Investor Relations</a></li>
               
-              <li class="list-group-item bg-dark"><a> Trust Center</a></li>
+              <li class="list-item-local"><a id="link"> Careers</a></li>
               
-              <li class="list-group-item bg-dark"><a> Legal</a></li>
+              <li class="list-item-local"><a id="link"> Trust Center</a></li>
+              
+              <li class="list-item-local"><a id="link"> Legal</a></li>
             </ul>
         </div>
         <hr id="hr"style="color: white;">
         <div class="col-lg-2 col-md-2 col-sm-2">
-          <h1>new</h1>
+          <ul class="list-group list-group-flush" >
+            <li class="list-item-local"><h4>Support</h4></li>
+            <li class="list-item-local"><a id="link"> Product Support</a></li>
+              
+              <li class="list-item-local"><a id="link"> Community</a></li>
+              
+              <li class="list-item-local"><a id="link"> Report Abuse</a></li>
+              
+              <li class="list-item-local"><a id="link">Resources</a></li>
+            </ul>
         </div>
+        <hr id="hr"style="color: white;">
         <div class="col-lg-2 col-md-2 col-sm-2">
-          <h1>new</h1>
+          <ul class="list-group list-group-flush float-end" >
+              
+            <li class="list-item-local"><h4>Account</h4></li>
+              <li class="list-item-local"><a id="link"> About Us</a></li>
+               
+              <li class="list-item-local"><a id="link"> Careers</a></li>
+              
+              <li class="list-item-local"><a id="link"> Trust Center</a></li>
+              
+              <li class="list-item-local"><a id="link"> Legal</a></li>
+            </ul>
         </div>
+        <hr id="hr"style="color: white;">
+       
         <div class="col-lg-2 col-md-2 col-sm-2">
-          <h1>new</h1>
+          <ul class="list-group list-group-flush float-start" >
+              
+            <li class="list-item-local"><h4>Partner Programs</h4></li>
+              <li class="list-item-local"><a id="link"> About Us</a></li>
+              
+              <li class="list-item-local"><a id="link"> Investor Relations</a></li>
+              
+              <li class="list-item-local"><a id="link"> Careers</a></li>
+              
+              <li class="list-item-local"><a id="link"> Trust Center</a></li>
+              
+              <li class="list-item-local"><a id="link"> Legal</a></li>
+            </ul>
         </div>
+        <!-- <hr id="hr"style="color: white;"> -->
         <div class="col-lg-2 col-md-2 col-sm-2">
-          <h1>new</h1>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2">
-          <h1>new</h1>
+          <ul class="list-group list-group-flush float-end" >
+              
+            <li class="list-item-local"><h4>Resources</h4></li>
+              <li class="list-item-local"><a id="link"> About Us</a></li>
+              
+              <li class="list-item-local"><a id="link"> Contact Us</a></li>
+              
+              <li class="list-item-local"><a id="link"> Newsroom</a></li>
+              
+              <li class="list-item-local"><a id="link"> Investor Relations</a></li>
+              
+              <li class="list-item-local"><a id="link"> Careers</a></li>
+              
+              <li class="list-item-local"><a id="link"> Trust Center</a></li>
+              
+              <li class="list-item-local"><a id="link"> Careers</a></li>
+              
+              <li class="list-item-local"><a id="link"> Trust Center</a></li>
+              
+              <li class="list-item-local"><a id="link"> Legal</a></li>
+            </ul>
         </div>
       </div>
-      <h5>Powered by TechBro</h5>
+      <h5 class="text-center"><hr id="hr"> Powered by TechBro <hr id="hr"></h5>
+      <p class="float-end list-item-local"style="color: white;">
+        Disclaimer!!! <br>
+        all NFT's seen on this  <br>
+        site were created,  <br>
+        uploaded and advertised <br>
+        by the rightful owners
+      </p>
+      
+      <p class="float-start list-item-local"style="color: white;">
+        Contact Info <br>
+        XX, Something Street,  <br>
+        in a certain City, and State,  <br>
+        in a certain Country <br>
+        something@gmail.com <br>
+        +234-xxx-xxxx-x42
+      </p>
+     
+      <br>
     </div>
 
     
