@@ -19,7 +19,7 @@
         
       }
       .new-nft-item:hover{
-        opacity: 0.5;
+        opacity: 0.8;
       }
 
       .popular-now{
@@ -33,8 +33,8 @@
       .popular-now-item{
         padding: 10px;
       }
-      img{
-        width: 200px;
+      #card-img-top{
+        width: 250px;
         height: 300px;
       }
       @media (max-width: 998px){
@@ -59,11 +59,15 @@
         .two{
           grid-area: 2;
         }
-        .first-choice{
+        #first-choice{
           display: none;
         }
         .card-text{
           display: none;
+        }
+        #card-img-top{
+          height: 250px;
+          width: 150px;
         }
       }
   
@@ -153,7 +157,7 @@
     </div>
 <br>
 <div class="col-md-1"></div>
-            <div class="card float-end col-md-3 col-sm-3 bg-dark first-choice" style="width: 18rem;">
+            <div class="card float-end col-md-3 col-sm-3 bg-dark" id="first-choice" style="width: 13rem;">
               <h4>#1 Choice</h4>
                 <img src="cartoon.jpg" class="card-img-top first-choice" alt="...">
                 <div class="card-body">
@@ -191,7 +195,7 @@
           <div class="row">
             <div class="col-md-6 col-sm-6">
               <div class="card new-nft-item">
-                <img src="sports.jpg" class="card-img-top" alt="...">
+                <img src="sports.jpg" class="card-img-top" id="card-img-top" alt="...">
                 <div class="card-body">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">ID: #123456</li>
@@ -202,12 +206,14 @@
               </div>
             </div>
             <div class="col-md-6 col-sm-6">
-              <div class="card new-nft-item two">
-                <img src="lifestyle.png" class="card-img-top" alt="...">
+              <div class="card new-nft-item">
+                <img src="lifestyle.png" class="card-img-top" alt="..." id="card-img-top">
                 <div class="card-body">
-                  
-                  <p class="card-title"> LifeStyle</p>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID: #123456</li>
+                    <li class="list-group-item">Category: Artist</li>
+                    <li class="list-group-item">Price: 0.24$</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -217,22 +223,25 @@
            <div class="row">
             <div class="col-md-6 col-sm-6">
               <div class="card new-nft-item one">
-                <img src="cartoon.jpg" class="card-img-top" alt="...">
+                <img src="cartoon.jpg" class="card-img-top" alt="..." id="card-img-top">
                 <div class="card-body">
-                  <p class="card-title"> ID: #23455
-                    Category: Cartoon NFT</p>
-                  
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID: #123456</li>
+                    <li class="list-group-item">Category: Artist</li>
+                    <li class="list-group-item">Price: 0.24$</li>
+                  </ul>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-sm-6">
               <div class="card new-nft-item">
-                <img src="monkey.jpg" class="card-img-top" alt="...">
+                <img src="monkey.jpg" class="card-img-top" alt="..." id="card-img-top">
                 <div class="card-body">
-                  
-                  <p class="card-title"> Ape too Dope</p>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID: #123456</li>
+                    <li class="list-group-item">Category: Artist</li>
+                    <li class="list-group-item">Price: 0.24$</li>
+                  </ul>
                 </div>
               </div>
             </div>
