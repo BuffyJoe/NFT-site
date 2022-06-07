@@ -37,7 +37,9 @@
         width: 400px;
         height: 300px;
       }
-
+      #hr{
+        display: none;
+      }
       .list-group-item{
         color: white;
       }
@@ -46,7 +48,9 @@
           width: 200px;
           height: 300px;
         }
-
+        #hr{
+          display: block;
+        }
         .new-nft-item > img{
           width: 180px;
           height: 180px;
@@ -92,6 +96,14 @@
       li{
         padding: -10px;
         margin: 0;  
+      }
+      a{
+        color: white;
+      }
+      a:hover{
+        text-decoration: underline;
+        color: blue;
+        font-weight: bold;
       }
     </style>
 
@@ -315,7 +327,47 @@
         <!-- end of Column beside New NFT -->
       </div>
     </div>
-  
+    <!-- end of New NFT's/ popular now -->
+
+    <div class="container-fluid bg-dark" style="padding: 20px;">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 text-left">
+          <h4>
+            About GoDaddy </h4>
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item bg-dark"><a> About Us</a></li>
+              
+              <li class="list-group-item bg-dark"><a> Contact Us</a></li>
+              
+              <li class="list-group-item bg-dark"><a> Newsroom</a></li>
+              
+              <li class="list-group-item bg-dark"><a> Investor Relations</a></li>
+              
+              <li class="list-group-item bg-dark"><a> Careers</a></li>
+              
+              <li class="list-group-item bg-dark"><a> Trust Center</a></li>
+              
+              <li class="list-group-item bg-dark"><a> Legal</a></li>
+            </ul>
+        </div>
+        <hr id="hr"style="color: white;">
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <h1>new</h1>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <h1>new</h1>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <h1>new</h1>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <h1>new</h1>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <h1>new</h1>
+        </div>
+      </div>
+    </div>
 
     
 </body>
