@@ -29,7 +29,7 @@
         list-style: none;
       }
       .new-nft-item:hover{
-        opacity: 0.8;
+        /* opacity: 0.8; */
       }
 
       .popular-now{
@@ -86,6 +86,31 @@
         color: blue;
         font-weight: bold;
       }
+        .left:hover {
+      position: relative;
+  animation-name: slide-left;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  opacity: 0.7;
+  }
+  
+  @keyframes slide-left {
+  from   {opacity: 1;}
+  to  {opacity: 0.7;}
+  
+  }
+  
+  .right:hover{
+    position: relative;
+  animation-name: slide-right;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+opacity: 0.7;
+}
+  @keyframes slide-right {
+  from   {opacity: 1;}
+  to  {opacity: 0.7;}
+  }
       @media (max-width: 767px){
         .new-nft-item{
           width: 150px;
@@ -135,7 +160,43 @@
           font-style: normal;
           text-decoration: underline;
         }
+        .dropdown-menu{
+          z-index: 1;
+        }
+        .left{
+          left: 30px;
+        }
+        .left:hover {
+      position: relative;
+  animation-name: slide-left;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  opacity: 0.7;
+  }
+  
+  @keyframes slide-left {
+  from   {left:25px; top:0px; opacity: 1;}
+  to  {left:30px; top:0px; opacity: 0.7;}
+  
+  }
+  
+  .right{
+    right: 30px;
+  }
+  .right:hover{
+    position: relative;
+  animation-name: slide-right;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+opacity: 0.7;
+}
+  @keyframes slide-right {
+  from   {right:25px; top:0px; opacity: 1;}
+  to  {right:30px; top:0px; opacity: 0.7;}
+  }
       }
+      
+
     </style>
 
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" style="color: rgb(60, 60, 180);">
@@ -166,10 +227,10 @@
                 
                 </form>
             </ul>
-            <div class="btn-group-horizontal">
+            <!-- <div class="btn-group-horizontal" style="z-index: 0;">
                 <button type="button" class="btn btn-outline-primary btn-sm">Login</button>
                 <button type="button" class="btn btn-primary btn-sm">Sign Up</button>
-            </div>
+            </div> -->
             <div style="width: 60px;"></div>
           </div>
         </div>
@@ -241,7 +302,7 @@
           <!-- first row in New NFT's -->
           <div class="row">
             <div class="col-lg-6 col-sm-4">
-              <div class="card new-nft-item bg-dark">
+              <div class="card new-nft-item bg-dark left">
                 <img src="sports.jpg" class="card-img-top" id="card-img-top" alt="...">
                 <div class="card-body d-none d-lg-block">
                   <ul class="list-group list-group-flush" >
@@ -257,7 +318,7 @@
               </div>
             </div>
             <div class="col-lg-6 col-sm-4">
-              <div class="card new-nft-item bg-dark">
+              <div class="card new-nft-item bg-dark left">
                 <img src="lifestyle.png" class="card-img-top" alt="..." id="card-img-top">
                 <div class="card-body d-none d-lg-block">
                   <ul class="list-group list-group-flush" >
@@ -273,7 +334,7 @@
            <!-- second row in New NFT's -->
            <div class="row">
             <div class="col-lg-6 col-sm-4">
-              <div class="card new-nft-item one bg-dark">
+              <div class="card new-nft-item one bg-dark right">
                 <img src="cartoon.jpg" class="card-img-top" alt="..." id="card-img-top">
                 <div class="card-body d-none d-lg-block">
                   <ul class="list-group list-group-flush" >
@@ -285,7 +346,7 @@
               </div>
             </div>
             <div class="col-lg-6 col-sm-4">
-              <div class="card new-nft-item bg-dark">
+              <div class="card new-nft-item bg-dark right">
                 <img src="monkey.jpg" class="card-img-top" alt="..." id="card-img-top">
                 <div class="card-body d-none d-lg-block">
                   <ul class="list-group list-group-flush" >
