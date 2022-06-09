@@ -116,7 +116,13 @@ opacity: 0.7;
           width: 150px;
           height: 180px;
         }
-        
+      .list-group-item{
+        color: black;
+        background-color: transparent;
+      }   
+      .list-group{
+        margin: 20px;
+      }
       .carousel-item > img{
         height: 200px;
         /* width: 550px; */
@@ -126,6 +132,10 @@ opacity: 0.7;
         }
         .new-nft-item > img{
           width: 100px;
+          height: 150px;
+        }
+        #popular-now-img{
+          width: 200px;
           height: 150px;
         }
         .new-nft{
@@ -167,33 +177,78 @@ opacity: 0.7;
           left: 5px;
         }
         .left:hover {
-      position: relative;
-  animation-name: slide-left;
-  animation-duration: 500ms;
-  animation-iteration-count: 1;
-  opacity: 0.7;
-  }
+          position: relative;
+          animation-name: slide-left;
+          animation-duration: 500ms;
+          animation-iteration-count: 1;
+          opacity: 0.7;
+          left: 0px;
+        }
   
-  @keyframes slide-left {
-  from   {left:5px; top:0px; opacity: 1;}
-  to  {left:0px; top:0px; opacity: 0.7;}
+        @keyframes slide-left {
+          from   {left:5px; top:0px; opacity: 1;}
+          to  {left:0px; top:0px; opacity: 0.7;}
+        }
   
-  }
-  
-  .right{
-    right: 5px;
-  }
-  .right:hover{
-    position: relative;
-  animation-name: slide-right;
-  animation-duration: 500ms;
-  animation-iteration-count: 1;
-opacity: 0.7;
-}
-  @keyframes slide-right {
-  from   {right:5px; top:0px; opacity: 1;}
-  to  {right:0px; top:0px; opacity: 0.7;}
-  }
+        .right{
+          right: 5px;
+        }
+        .right:hover{
+          position: relative;
+          animation-name: slide-right;
+          animation-duration: 500ms;
+          animation-iteration-count: 1;
+          opacity: 0.7;
+          right: 0px;
+        }
+        @keyframes slide-right {
+          from   {right:5px; top:0px; opacity: 1;}
+          to  {right:0px; top:0px; opacity: 0.7;}
+        }
+
+        #list-item-1{
+          left: 5px;
+          font-size: 20px;
+          color: white;
+          animation-name: list-slide-left-1;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          opacity: 0;
+        }
+        #list-item-2{
+          left: 15px;
+          font-size: 20px;
+          color: white;
+          animation-name: list-slide-left-2;
+          animation-duration: 2s;
+          animation-iteration-count: 1;
+          opacity: 1;
+          animation-delay: 1s;
+          opacity: 0;
+        }
+        #list-item-3{
+          left: 30px;
+          font-size: 20px;
+          color: white;
+          animation-name: list-slide-left-3;
+          animation-duration: 3s;
+          animation-iteration-count: 1;
+          opacity: 1;
+          animation-delay: 3s;
+          opacity: 0;
+        }
+        @keyframes list-slide-left-1 {
+          from   {left:0px; top:0px; opacity: 0;}
+          to  {left:5px; top:0px; opacity: 1;}
+        }
+        @keyframes list-slide-left-2 {
+          from   {left:0px; top:0px; opacity: 0;}
+          to  {left:15px; top:0px; opacity: 1;}
+        }
+        @keyframes list-slide-left-3 {
+          from   {left:0px; top:0px; opacity: 0;}
+          to  {left:30px; top:0px; opacity: 1;}
+        }
       }
       
 
@@ -227,10 +282,10 @@ opacity: 0.7;
                 
                 </form>
             </ul>
-            <!-- <div class="btn-group-horizontal" style="z-index: 0;">
+            <div class="btn-group-horizontal" style="z-index: 0;">
                 <button type="button" class="btn btn-outline-primary btn-sm">Login</button>
                 <button type="button" class="btn btn-primary btn-sm">Sign Up</button>
-            </div> -->
+            </div>
             <div style="width: 60px;"></div>
           </div>
         </div>
@@ -363,33 +418,33 @@ opacity: 0.7;
         </div>
         <!-- end of New NFT's-->
         <!-- Start of Column beside New NFT's -->
-        <div class="col-md-4">
+        <div class="col-md-4 d-none d-lg-block">
           <!-- start of Popular now -->
-          <div class="row popular-now">
+          <div class="row">
 
           </div>
           <div class="col popular-now">
             <h1>Popular Now</h1>
-            <!-- <div class="row">
-                <div class="card mb-3 popular-now-item" style="max-width: 540px;">
-                  <div class="row g-0">
-                      <div class="col-md-7">
-                          <img src="cartoon.jpg" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-5">
-                          <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                          </div>
-                      </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-sm-4 col-md-4">
+                  <img src="cartoon.jpg" class="img-fluid rounded-start" alt="..."  id="popular-now-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
                 </div>
               </div>
-            </div> -->
+            </div>
             <!-- end row 1 -->
-            <!-- <div class="row">
-              <div class="card mb-3 popular-now-item" style="max-width: 540px;">
+            <div class="row">
+              <div class="card mb-3 popular-now-item">
                 <div class="row g-0">
                     <div class="col-md-7">
-                        <img src="nft.jpg" class="img-fluid rounded-start" alt="...">
+                        <img src="nft.jpg" class="img-fluid rounded-start" alt="..."  id="popular-now-img">
                     </div>
                     <div class="col-md-5">
                         <div class="card-body">
@@ -398,13 +453,13 @@ opacity: 0.7;
                     </div>
                 </div>
               </div>
-            </div> -->
+            </div>
             <!-- end row 2 -->
-            <!-- <div class="row">
-              <div class="card mb-3 popular-now-item" style="max-width: 540px;">
+            <div class="row">
+              <div class="card mb-3 popular-now-item">
                 <div class="row g-0">
-                    <div class="col-md-7">
-                        <img src="helmet.png" class="img-fluid rounded-start" alt="...">
+                    <div class="col-md-7 col-sm-3">
+                        <img src="helmet.png" class="img-fluid rounded-start" alt="..." id="popular-now-img">
                     </div>
                     <div class="col-md-5">
                         <div class="card-body">
@@ -413,7 +468,7 @@ opacity: 0.7;
                     </div>
                 </div>
               </div>
-            </div> -->
+            </div>
             <!-- end row 3 -->
           </div>
           <!-- end of Popular Now -->
@@ -424,6 +479,23 @@ opacity: 0.7;
     </div>
     <!-- end of New NFT's/ popular now -->
 <div id="spacer"></div>
+
+<div class="steps d-block d-lg-none">
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center" style="border: none;" id="list-item-1">
+      A list item
+      <span class="badge bg-primary rounded-pill">1</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center" style="border: none;" id="list-item-2">
+      A second list item
+      <span class="badge bg-primary rounded-pill">2</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center" style="border: none;" id="list-item-3">
+      A third list item
+      <span class="badge bg-primary rounded-pill">3</span>
+    </li>
+  </ul>
+</div>
 
 <!-- bottom navigation  web view-->
     <div class="container-fluid d-none d-lg-block style="padding-left: 40px; opacity: 1;">
