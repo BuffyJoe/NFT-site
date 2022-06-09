@@ -57,7 +57,7 @@
         color: white;
       }
       #spacer{
-        height: 400px;
+        height: 100px;
       }
       #link:hover{
         text-decoration: underline;
@@ -216,25 +216,25 @@ opacity: 0.7;
           opacity: 0;
         }
         #list-item-2{
-          left: 15px;
+          left: 10px;
           font-size: 20px;
           color: white;
           animation-name: list-slide-left-2;
-          animation-duration: 8s;
+          animation-duration: 4s;
           animation-iteration-count: infinite;
           opacity: 1;
-          animation-delay: 1s;
+          animation-delay: 3s;
           opacity: 0;
         }
         #list-item-3{
-          left: 30px;
+          left: 15px;
           font-size: 20px;
           color: white;
           animation-name: list-slide-left-3;
-          animation-duration: 12s;
+          animation-duration: 4s;
           animation-iteration-count: infinite;
           opacity: 1;
-          animation-delay: 1s;
+          animation-delay: 6s;
           opacity: 0;
         }
         @keyframes list-slide-left-1 {
@@ -242,12 +242,12 @@ opacity: 0.7;
           to  {left:5px; top:0px; opacity: 1;}
         }
         @keyframes list-slide-left-2 {
-          from   {left:0px; top:0px; opacity: 0;}
-          to  {left:15px; top:0px; opacity: 1;}
+          from   {left:5px; top:0px; opacity: 0;}
+          to  {left:10px; top:0px; opacity: 1;}
         }
         @keyframes list-slide-left-3 {
-          from   {left:0px; top:0px; opacity: 0;}
-          to  {left:30px; top:0px; opacity: 1;}
+          from   {left:10px; top:0px; opacity: 0;}
+          to  {left:15px; top:0px; opacity: 1;}
         }
       }
       
@@ -478,10 +478,13 @@ opacity: 0.7;
       </div>
     </div>
     <!-- end of New NFT's/ popular now -->
-<!-- <div id="spacer"></div> -->
+<div id="spacer"></div>
 
 <div class="steps d-block d-lg-none">
-  <h4>Get Started in 3 Easy Steps</h4>
+  <div class="text-center">
+    <h4>Get Started in 3 Easy Steps</h4>
+  </div>
+    
   <ul class="list-group">
     <li class="list-group-item d-flex justify-content-between align-items-center" style="border: none;" id="list-item-1">
       Sign up to NFT's Hub
@@ -497,7 +500,7 @@ opacity: 0.7;
     </li>
   </ul>
 </div>
-
+<div id="spacer"></div>
 <!-- bottom navigation  web view-->
     <div class="container-fluid d-none d-lg-block style="padding-left: 40px; opacity: 1;">
       <div class="row">
